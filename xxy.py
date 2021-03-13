@@ -10,7 +10,7 @@ data={'account':'1833010512',#账号
       'app_version':'4.9.9',
       'key':'',
       'model':'huawei tag-tl00',
-      'password':'qj200009.',#密码
+      'password':'cWoyMDAwMDku',#密码
       'platform':'2',
       'registration_id':'1a0018970a242ca8039',
       'request_source':'3',
