@@ -4,17 +4,25 @@ import json
 import time 
 import os
 #习讯云签到脚本
+# 配置开始
+user = os.environ["USER"]
+account = user.split( )[0] # 账号
+password = user.split( )[1] # 密码
+school_id = user.split( )[2] # 学校ID
+sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
+longitude = sign_gps.split(",")[0] # 经度
+latitude = sign_gps.split(",")[1] # 纬度
    
-data={'account':'1833010512',#账号
+data={'account':account,#账号
       'app_id':'cn.vanber.xixunyun.saas',
       'app_version':'4.9.9',
       'key':'',
       'model':'huawei tag-tl00',
-      'password':'\u0071\u006a\u0032\u0030\u0030\u0030\u0030\u0039\u002e',#密码
+      'password':password,#密码
       'platform':'2',
       'registration_id':'1a0018970a242ca8039',
       'request_source':'3',
-      'school_id':'1743',#学校代码
+      'school_id':school_id,#学校代码
       'system':'5.1.1',
       'uuid':'00:81:24:d9:fc:da'}
 login_header={
@@ -31,8 +39,8 @@ login_data=json.loads(request.text)#登陆成功后返回的信息
 token=login_data['data']['token']
 time.sleep(1)
 #经纬度地址
-latitude='23.870538'#维度
-longitude='120.521263'#经度
+latitude=latitude#维度
+longitude=longitude#经度
 print(login_data)
 sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.9.9&platform=android&entrance_year=0&graduate_year=0 '
 sign_data={'address':'',#签到地址
