@@ -55,11 +55,7 @@ sign_data={'address':os.environ["ADDRESS"],#签到地址
 sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
 sign=json.loads(sign_request.text)
 print(sign)
-
-i = sign_request.text.split(':')
-	for i in range(5,9) :
-    print(i)
-print(xg)
+print(sign_request.text.encode('ascii').decode('unicode_escape'))
                                      
 #SCKEY=os.environ["SCKEY"]
 #if len(SCKEY) >= 1:
