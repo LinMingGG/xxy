@@ -56,9 +56,9 @@ sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
 sign=json.loads(sign_request.text)
 print(sign)
 
-caifen = sign_request.text.split(':')
-	for xg in range(1)
- xg=(caifen[1].substring(1,5))
+i = sign_request.text.split(':')
+	for i in range(5,9) :
+    print(i)
 print(xg)
                                      
 #SCKEY=os.environ["SCKEY"]
