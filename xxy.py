@@ -39,7 +39,7 @@ request=requests.post(url=login_url,headers=login_header,data=data)
 login_data=json.loads(request.text)#登陆成功后返回的信息
 token=login_data['data']['token']
 time.sleep(1)
-#经纬度地址
+
 latitude=latitude#维度
 longitude=longitude#经度
 print(login_data)
