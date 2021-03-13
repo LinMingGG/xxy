@@ -76,10 +76,10 @@ toaddrs = '482750836@qq.com'  # 收件人邮箱账号，这边发送给自己,�
 def mail():
     ret = True
     try:
-        msg = MIMEText('内容', 'plain', 'utf-8')
-        msg['From'] = formataddr(["From@修业", fromaddrs])  # 发件人邮箱昵称、发件人邮箱账号
+        msg = MIMEText(sign_request.text, 'plain', 'utf-8')
+        msg['From'] = formataddr(["习讯云签到提醒", fromaddrs])  # 发件人邮箱昵称、发件人邮箱账号
         msg['To'] = formataddr(["FK", toaddrs])  # 收件人邮箱昵称、收件人邮箱账号
-        msg['Subject'] = "每日天气"  # 邮件的主题
+        msg['Subject'] = "习讯云自动签到提醒"  # 邮件的主题
 
         server = smtplib.SMTP_SSL("smtp.163.com",)  # qq邮箱SMTP服务器，端口是25
         server.login(fromaddrs, password)  # 发件人邮箱账号、邮箱密码
