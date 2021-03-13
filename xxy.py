@@ -13,6 +13,9 @@ sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
 longitude = sign_gps.split(",")[0] # 经度
 latitude = sign_gps.split(",")[1] # 纬度
 SCKEY=os.environ["SCKEY"]
+address = os.environ["ADDRESS_NAME"]
+address1 = address.splist( )[0]
+address2 = address.splist( )[1]
    
 data={'account':account,#账号
       'app_id':'cn.vanber.xixunyun.saas',
@@ -44,8 +47,8 @@ latitude=latitude#维度
 longitude=longitude#经度
 print(login_data)
 sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.9.9&platform=android&entrance_year=0&graduate_year=0 '
-sign_data={'address':'',#签到地址
-           'address_name':os.environ["ADDRESS_NAME"],#签到地点名称
+sign_data={'address':address1,#签到地址
+           'address_name':address2,#签到地点名称
            'change_sign_resource':'1',
            'comment':'',
            'latitude':"PcsiE2OsHB5/8tdtamFezKcg9jYp4lKOryX8mG68mE32nVFwh1BNzaJgDIaUK0QOnz7iGDgOcyGMwbB85zJT7wf3Dczy5O9z3/mTBOH9zOFhxKhUSUqlpKdfG5+ZV8UJF6evTcYci5YPIpqGI6uifnQmyB/X86bcNGqe1f2i0WU=",
