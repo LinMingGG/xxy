@@ -15,7 +15,7 @@ name: ADDRESS_NAME
 value: 地址名称 标准地址  (用空格或回车分开 如重庆水利电力职业技术学院 重庆市永川区中山路街道聚泽苑重庆水利电力职业技术院)
 
 name: EMAIL
-value: 你的邮箱地址     (用于接收签到提醒  Code=2000 表示签到成功)此添加为选用
+value: 你的邮箱地址     (用于接收签到提醒  Code=20000 表示签到成功)此添加为选用
 
 name: SCKEY
 value: Server酱接口号  (用于微信Server酱接收签到提醒 如SCU95156T515985ffca658bf1b801c24983lm77215ea134d3265nm )此添加为选用
