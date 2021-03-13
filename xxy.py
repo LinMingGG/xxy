@@ -61,7 +61,7 @@ print(utf8.encode('ascii').decode('unicode_escape'))
 SCKEY=os.environ["SCKEY"]
 if len(SCKEY) >= 1:
   url = 'https://sc.ftqq.com/'+SCKEY+'.send'
-  requests.post(url, data={"text": "习讯云签到提醒", "desp": sign_request.text })
+  requests.post(url, data={"text": "习讯云签到提醒", "desp": utf8 })
 os.system("pause")
 
 
