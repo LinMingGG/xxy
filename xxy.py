@@ -55,13 +55,15 @@ sign_data={'address':os.environ["ADDRESS"],#签到地址
 sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
 sign=json.loads(sign_request.text)
 print(sign)
+
+
 utf8=sign_request.text
 print(utf8.encode('ascii').decode('unicode_escape'))
                                      
 SCKEY=os.environ["SCKEY"]
 if len(SCKEY) >= 1:
   url = 'https://sc.ftqq.com/'+SCKEY+'.send'
-  requests.post(url, data={"text": "习讯云签到提醒", "desp": utf8 })
+  requests.post(url, data={"text": "习讯云签到提醒", "desp": utf8.json })
 os.system("pause")
 
 
