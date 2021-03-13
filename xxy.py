@@ -53,7 +53,7 @@ sign_data={'address':os.environ["ADDRESS"],#签到地址
     
     }
 sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
-sign=json.dump(sign_request.text)
+sign=json.dump()(sign_request.text)
 print(sign)
 
                                      
