@@ -57,7 +57,7 @@ sign=json.loads(sign_request.text)
 print(sign)
 
 caifen = sign_request.text.split(':')
-	for xg range(1)
+	for xg in range(1)
  xg=(caifen[1].substring(1,5))
 print(xg)
                                      
