@@ -57,6 +57,10 @@ sign=json.loads(sign_request.text)
 print(sign)
 
 
+SCKEY=os.environ["SCKEY"]
+if len(SCKEY) >= 1:
+  url = 'https://sc.ftqq.com/'+SCKEY+'.send'
+  requests.post(url, data={"text": "习讯云签到提醒", "desp": sign.json()})
 os.system("pause")
 
 
