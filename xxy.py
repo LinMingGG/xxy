@@ -30,7 +30,7 @@ data={'account':account,#账号
       'system':'5.1.1',
       'uuid':'00:81:24:d9:fc:da'}
 login_header={
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
         'Content-Length': '227',
         'Host': 'api.xixunyun.com',
         'Connection': 'Keep-Alive',
@@ -44,13 +44,13 @@ token=login_data['data']['token']
 time.sleep(1)
 
 print(login_data)
-sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.9.9&platform=android&entrance_year=0&graduate_year=0 '
+sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.1.5&platform=android&entrance_year=0&graduate_year=0 '
 sign_data={'address':address2,#签到地址
            'address_name':address1,#签到地点名称
            'change_sign_resource':'1',
            'comment':'',
-           'latitude':"PcsiE2OsHB5/8tdtamFezKcg9jYp4lKOryX8mG68mE32nVFwh1BNzaJgDIaUK0QOnz7iGDgOcyGMwbB85zJT7wf3Dczy5O9z3/mTBOH9zOFhxKhUSUqlpKdfG5+ZV8UJF6evTcYci5YPIpqGI6uifnQmyB/X86bcNGqe1f2i0WU=",
-           'longitude':"fS0dMPGfCMjpBmLZgJKV6GXjlC/PD8ZaVlsxSsXopLOPkctgbRuNfGThWBXdjuOY0ESvvWg+l6oYrhMsiHvrTrpJKyy95bMhDW83SNbLrvHQcvdlo5I+ApSYTBNRxvRHqDlSOifwRUdweCBKgrSs26YLP0JWZPwAK54uwNruN3U=",
+           'latitude':latitude,
+           'longitude':longitude,
            'remark':'0',
     
     }
@@ -65,6 +65,8 @@ if len(SCKEY) >= 1:
   requests.post(url, data={"text": "习讯云签到提醒", "desp": sign_request.text})
 os.system("pause")
 
+print(longitude)
+print(latitude)
 
 
 
