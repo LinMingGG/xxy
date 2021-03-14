@@ -49,8 +49,8 @@ sign_data={'address':address2,#签到地址
            'address_name':address1,#签到地点名称
            'change_sign_resource':'1',
            'comment':'',
-           'latitude':latitude,
-           'longitude':longitude,
+           'latitude':sign_gps.split(",")[0],
+           'longitude':sign_gps.split(",")[1],
            'remark':'0',
     
     }
