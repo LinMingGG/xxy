@@ -43,8 +43,8 @@ login_data=json.loads(request.text)#登陆成功后返回的信息
 token=login_data['data']['token']
 time.sleep(1)
 
-latitude=latitude#维度
-longitude=longitude#经度
+latitude=latitude1#维度
+longitude=longitude1#经度
 print(login_data)
 sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.9.9&platform=android&entrance_year=0&graduate_year=0 '
 sign_data={'address':address2,#签到地址
