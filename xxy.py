@@ -30,7 +30,7 @@ data={'account':account,#账号
       'system':'5.1.1',
       'uuid':'00:81:24:d9:fc:da'}
 login_header={
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': '227',
         'Host': 'api.xixunyun.com',
         'Connection': 'Keep-Alive',
