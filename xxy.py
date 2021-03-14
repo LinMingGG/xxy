@@ -17,7 +17,6 @@ address = os.environ["ADDRESS_NAME"]
 address1 = address.split( )[0]
 address2 = address.split( )[1]
    
-print(sign_gps)
 data={'account':account,#账号
       'app_id':'cn.vanber.xixunyun.saas',
       'app_version':'4.9.9',
@@ -50,8 +49,8 @@ sign_data={'address':address2,#签到地址
            'address_name':address1,#签到地点名称
            'change_sign_resource':'1',
            'comment':'',
-           'latitude':'',
-           'longitude':'',
+           'latitude':'29.367676',
+           'longitude':'105.935129',
            'remark':'0',
     
     }
