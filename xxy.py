@@ -47,7 +47,7 @@ print(login_data)
 sign_url='https://api.xixunyun.com/signin?token='+token+'&from=app&version=4.1.5&platform=android&entrance_year=0&graduate_year=0 '
 sign_data={'address':'',#签到地址
            'address_name':address,#签到地点名称
-           'change_sign_resource':'0',
+           'change_sign_resource':'1',
            'comment':'',
            'latitude':latitude,
            'longitude':longitude,
