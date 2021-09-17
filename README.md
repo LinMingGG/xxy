@@ -40,4 +40,4 @@ value: <code>Server酱接口号</code><br>  (用于微信Server酱接收签到�
 
 最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 （重要！！！测试发现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作） 。
 
-### 其他项目链接请访问：<code>1.15.229.3</code><br> 
+### 其他项目链接请访问：<code>http://1.15.229.3/</code><br> 
