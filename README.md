@@ -19,24 +19,24 @@
 
 在Setting里的secrets添加参数如下：
 
-name: USER
-value: 账号 密码 学校代码  （用空格或回车分开，学校代码 可以前往 https://api.xixunyun.com/login/schoolmap 查询 如渝水职院：1743）
+name: <code>USER</code><br>
+value: <code>账号 密码 学校代码</code><br>  （用空格或回车分开，学校代码 可以前往 https://api.xixunyun.com/login/schoolmap 查询 如渝水职院：1743）
 
-name: SIGN_GPS
-value: 你的地理位置坐标经纬度 如105.931252,29.367364   (获取地址坐标位置： https://lbs.amap.com/console/show/picker 高德取坐标)
+name: <code>SIGN_GPS</code><br>
+value: 你的地理位置坐标经纬度 如<code>105.931252,29.367364</code><br>   (获取地址坐标位置： https://lbs.amap.com/console/show/picker 高德取坐标)
 
-name: ADDRESS_NAME
-value: 地址名称    此添加为选用 可忽略
+name: <code>ADDRESS_NAME</code><br>
+value: <code>地址名称</code><br>    此添加为选用 可忽略
 
-name: EMAIL
-value: 你的邮箱地址     (用于接收签到提醒  Code=20000 表示签到成功)此添加为选用
+name: <code>EMAIL</code><br>
+value: <code>你的邮箱地址</code><br>     (用于接收签到提醒  Code=20000 表示签到成功)此添加为选用
 
-name: SCKEY
-value: Server酱接口号  (用于微信Server酱接收签到提醒 如SCU95156T515985ffca658bf1b801c24983lm77215ea134d3265nm )此添加为选用
+name: <code>SCKEY</code><br>
+value: <code>Server酱接口号</code><br>  (用于微信Server酱接收签到提醒 如SCU95156T515985ffca658bf1b801c24983lm77215ea134d3265nm )此添加为选用
 
 
 设置好环境变量后点击你的仓库上方的 Actions 选项，会打开一个如下的页面，点击 I understand... 按钮确认在 Fork 的仓库上启用 GitHub Actions 。
 
 最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 （重要！！！测试发现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作） 。
 
-其他项目链接请访问：1.15.229.3
+其他项目链接请访问：<code>1.15.229.3</code><br> 
