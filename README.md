@@ -33,7 +33,7 @@ name: <code>EMAIL</code><br>
 value: <code>你的邮箱地址</code><br>     (用于接收签到提醒  Code=20000 表示签到成功)此添加为选用
 
 name: <code>SCKEY</code><br>
-value: <code>Server酱接口号</code><br>  (用于微信Server酱接收签到提醒 如SCU95156T515985ffca658bf1b801c24983lm77215ea134d3265nm )此添加为选用
+value: <code>Server酱接口号</code><br>  (用于微信Server酱接收签到提醒 如<code>SCU95156T515985ffca658bf1b801c24983lm77215ea134d3265nm</code><br>)  此添加为选用
 
 ### 2、启动程序
 设置好环境变量后点击你的仓库上方的 Actions 选项，会打开一个如下的页面，点击 I understand... 按钮确认在 Fork 的仓库上启用 GitHub Actions 。
