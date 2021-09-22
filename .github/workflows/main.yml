@@ -35,4 +35,5 @@ jobs:
           ADDRESS_NAME:  ${{ secrets.ADDRESS_NAME }} 
           SCKEY: ${{ secrets.SCKEY }} 
           EMAIL: ${{ secrets.EMAIL }} 
+          ADDRESS_DETAIL:  ${{ secrets.ADDRESS_DETAIL }} 
 
