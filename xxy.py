@@ -14,6 +14,7 @@ longitude1 = sign_gps.split(",")[0] # 经度
 latitude1 = sign_gps.split(",")[1] # 纬度
 SCKEY=os.environ["SCKEY"]
 address = os.environ["ADDRESS_NAME"]
+address_detail = os.environ["ADDRESS_DETAIL"]
    
 data={'account':account,#账号
       'app_id':'cn.vanber.xixunyun.saas',
@@ -45,13 +46,13 @@ longitude=longitude1
 latitude=latitude1
 print(login_data)
 sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.1.5&platform=android&entrance_year=0&graduate_year=0 '
-sign_data={'address':'',#签到地址
+sign_data={'address':'address_detail',#签到地址
            'address_name':address,#签到地点名称
            'change_sign_resource':'0',
            'comment':'',
            'latitude':"PcsiE2OsHB5/8tdtamFezKcg9jYp4lKOryX8mG68mE32nVFwh1BNzaJgDIaUK0QOnz7iGDgOcyGMwbB85zJT7wf3Dczy5O9z3/mTBOH9zOFhxKhUSUqlpKdfG5+ZV8UJF6evTcYci5YPIpqGI6uifnQmyB/X86bcNGqe1f2i0WU=",
            'longitude':"fS0dMPGfCMjpBmLZgJKV6GXjlC/PD8ZaVlsxSsXopLOPkctgbRuNfGThWBXdjuOY0ESvvWg+l6oYrhMsiHvrTrpJKyy95bMhDW83SNbLrvHQcvdlo5I+ApSYTBNRxvRHqDlSOifwRUdweCBKgrSs26YLP0JWZPwAK54uwNruN3U=",
-           'remark':'0',
+           'remark':'1',
     
     }
 sign_request=requests.post(url=sign_url,data=sign_data,headers=login_header)
