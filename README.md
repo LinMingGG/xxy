@@ -1,6 +1,6 @@
 # ##习讯云自动签到##
 <code>2021年9月17日 18:00更新</code><br>
-123
+
 为了让同学们更加认真、更加专注听课，而不去用手机签到花费大量时间、耗费大量精力，请自行合理使用！请点击下方View all of README.md了解更多。
 
 本项目支持习讯云的签到，可以自定义位置。
@@ -28,6 +28,9 @@ value: 你的地理位置坐标经纬度 如<code>105.931252,29.367364</code><br
 
 name: <code>ADDRESS_NAME</code><br>
 value: <code>地址名称</code><br>    此添加为选用 可忽略
+
+name: <code>ADDRESS_DETAIL</code><br>
+value: <code>详细地址名称</code><br>    (门牌号)此添加为选用 可忽略
 
 name: <code>EMAIL</code><br>
 value: <code>你的邮箱地址</code><br>     (用于接收签到提醒  Code=20000 表示签到成功)此添加为选用
