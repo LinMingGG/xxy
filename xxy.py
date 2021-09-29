@@ -10,8 +10,8 @@ account = user.split( )[0] # 账号
 password = user.split( )[1] # 密码
 school_id = user.split( )[2] # 学校ID
 sign_gps = os.environ["SIGN_GPS"]  # 签到坐标（注意小数点取后6位）
-longitude1 = sign_gps.split(",")[0] # 经度
-latitude1 = sign_gps.split(",")[1] # 纬度
+longitude = sign_gps.split(",")[0] # 经度
+latitude = sign_gps.split(",")[1] # 纬度
 SCKEY=os.environ["SCKEY"]
 address = os.environ["ADDRESS_NAME"]
 address_detail = os.environ["ADDRESS_DETAIL"]
@@ -42,16 +42,16 @@ login_data=json.loads(request.text)#登陆成功后返回的信息
 token=login_data['data']['token']
 time.sleep(1)
 
-longitude=longitude1
-latitude=latitude1
 print(login_data)
 sign_url='https://api.xixunyun.com/signin_rsa?token='+token+'&from=app&version=4.1.5&platform=android&entrance_year=0&graduate_year=0 '
 sign_data={'address':address_detail,#签到地址
            'address_name':address,#签到地点名称
            'change_sign_resource':'0',
            'comment':'',
-           'latitude':"PcsiE2OsHB5/8tdtamFezKcg9jYp4lKOryX8mG68mE32nVFwh1BNzaJgDIaUK0QOnz7iGDgOcyGMwbB85zJT7wf3Dczy5O9z3/mTBOH9zOFhxKhUSUqlpKdfG5+ZV8UJF6evTcYci5YPIpqGI6uifnQmyB/X86bcNGqe1f2i0WU=",
-           'longitude':"fS0dMPGfCMjpBmLZgJKV6GXjlC/PD8ZaVlsxSsXopLOPkctgbRuNfGThWBXdjuOY0ESvvWg+l6oYrhMsiHvrTrpJKyy95bMhDW83SNbLrvHQcvdlo5I+ApSYTBNRxvRHqDlSOifwRUdweCBKgrSs26YLP0JWZPwAK54uwNruN3U=",
+            'latitude':latitude,
+            'longitude':longitude,
+          # 'latitude':"PcsiE2OsHB5/8tdtamFezKcg9jYp4lKOryX8mG68mE32nVFwh1BNzaJgDIaUK0QOnz7iGDgOcyGMwbB85zJT7wf3Dczy5O9z3/mTBOH9zOFhxKhUSUqlpKdfG5+ZV8UJF6evTcYci5YPIpqGI6uifnQmyB/X86bcNGqe1f2i0WU=",
+          # 'longitude':"fS0dMPGfCMjpBmLZgJKV6GXjlC/PD8ZaVlsxSsXopLOPkctgbRuNfGThWBXdjuOY0ESvvWg+l6oYrhMsiHvrTrpJKyy95bMhDW83SNbLrvHQcvdlo5I+ApSYTBNRxvRHqDlSOifwRUdweCBKgrSs26YLP0JWZPwAK54uwNruN3U=",
            'remark':'0',
     
     }
