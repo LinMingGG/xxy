@@ -45,6 +45,6 @@ value: <code>Server酱接口号</code><br>  (用于微信Server酱接收签到�
 ### 2、启动程序
 设置好环境变量后点击你的仓库上方的 Actions 选项，会打开一个如下的页面，点击 I understand... 按钮确认在 Fork 的仓库上启用 GitHub Actions 。
 
-最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 （重要！！！测试发现在 Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作） 。
+最后在你这个 Fork 的仓库内随便改点什么（比如给 README 文件删掉或者增加几个字符）提交一下手动触发一次 GitHub Actions 就可以了 （重要！！！第一次Fork 的仓库上 GitHub Actions 的定时任务不会自动执行，必须要手动触发一次后才能正常工作） 。
 
 ### 其他项目链接请访问：<code>http://1.15.229.3/</code><br> 
